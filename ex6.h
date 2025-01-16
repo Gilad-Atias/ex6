@@ -157,7 +157,7 @@ void freeOwnerNode(OwnerNode *owner);
  * @return updated BST root
  * Why we made it: Standard BST insertion ignoring duplicates.
  */
-PokemonNode *insertPokemonNode(PokemonNode *root, PokemonNode *newNode);
+void insertPokemon(PokemonNode ** root, int id);
 
 /**
  * @brief BFS search for a Pokemon by ID in the BST.
@@ -447,6 +447,7 @@ void printOwnersCircular(void);
  * Why we made it: Ensures a squeaky-clean exit with no leftover memory.
  */
 void freeAllOwners(void);
+OwnerNode* printOwners();
 
 /* ------------------------------------------------------------
    13) The Main Menu
@@ -611,5 +612,6 @@ static const PokemonData pokedex[] = {
     {149, "Dragonite", DRAGON, 91, 134, CANNOT_EVOLVE},
     {150, "Mewtwo", PSYCHIC, 106, 110, CANNOT_EVOLVE},
     {151, "Mew", PSYCHIC, 100, 100, CANNOT_EVOLVE}};
+
 
 #endif // EX6_H
