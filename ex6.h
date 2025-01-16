@@ -157,8 +157,7 @@ void freeOwnerNode(OwnerNode *owner);
  * @return updated BST root
  * Why we made it: Standard BST insertion ignoring duplicates.
  */
-void insertPokemon(PokemonNode ** root, int id);
-
+void insertPokemon(PokemonNode ** root , int id);
 /**
  * @brief BFS search for a Pokemon by ID in the BST.
  * @param root BST root
